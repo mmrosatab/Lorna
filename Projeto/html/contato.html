@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Lorna :: Contato</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/contato.css">
+
+	<script type="text/javascript" src="jspdf.min.js"></script>
+
+	<script type="text/javascript">
+
+		function gerarPdf(argument) 
+		{		
+			var doc = new jsPDF();                       
+
+			doc.text(20, 20,"Bastante simples o jsPDF!"); // algum texto
+
+			doc.save('Relatorio.pdf');	
+		} 
+
+	</script>
+
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="header_top"> 
+			<div id="twitter_page">
+				
+				<a target="_blank" href="https://twitter.com/?lang=pt">
+					<img id="image_twitter" src="../images/twitter_icon.png" alt="Nossa página no twitter">
+				</a>
+				
+			</div>
+
+			
+			<div id="facebook_page">
+				
+				<a target="_blank" href="https://pt-br.facebook.com/">
+					<img id="image_facebook" src="../images/facebook_icon.png" alt="Nossa página no facebook">
+				</a>
+			
+			</div>
+			
+		</div>
+
+		<div id="header_middle">
+
+			<img id="image_logo_lorna" src="../images/logo_lorna.png" alt="Nossa página no facebook">
+			
+			<form>
+				<input id="text_seach" type="text" name="search" placeholder=" Search..">
+				<input id="search_button" type="image" src="../images/search-icon.png" name="search" alt="Clique aqui para fazer uma busca">
+			</form>
+			
+		</div>
+
+		<div id="header_bottom">
+			<div>
+				<a class="home_link" href="home.html">Home</a> 
+			</div>
+
+			<div>
+				 <a class="projects_link" href="projetos.html">Projetos</a> 
+				
+			</div>
+
+			<div>
+				 <a class="developers_link" href="desenvolvimento.html">Desenvolvedores</a> 
+				
+			</div>
+
+			<div>
+				 <a class="contato_link" href="contato.html">Contato</a> 
+				
+			</div>
+		
+		</div>
+
+		<br>
+
+		<div id="main_container">
+			<div id=box_contato>
+				<div id="contato">
+					<form name = "form_contato" method="post" action="envia.php">
+
+						<p>
+							Para obter mais informações e/ou tirar dúvidas sobre nossos serviços,projetos e preços, 
+							entre em contato conosco pelo formulário abaixo. Você pode ainda falar conosco através de nossas
+							redes socias oficiais: Twitter e Facebook ou por telefone : (21) 3103-4771.
+						</p>
+
+						<table>
+							<tr>
+								<td>Nome</td>
+								<td><input type="text" name="nome"></td>
+							</tr>
+
+							<tr>
+								<td>E-mail</td>
+								<td><input type="text" name="email"></td>
+							</tr>
+
+							<tr>
+								<td>Telefone</td>
+								<td><input type="text" name="telefone"></td>
+							</tr>
+
+							<tr>
+								<td>Mensagem</td>
+								<td><input type="text" name="mensagem"></td>
+							</tr>
+
+							<tr>
+								<td><input type="submit" name="enviar" value="Enviar"></td>
+							</tr>
+						</table>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

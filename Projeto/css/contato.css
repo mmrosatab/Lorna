@@ -1,0 +1,144 @@
+body
+{
+
+	margin: 0 0;
+	background-color: #E0E0E0;
+	font-size: 12px;
+	font-family: verdana;
+}
+
+#container
+{
+	
+}
+
+#header_top
+{
+
+	border-style: solid;
+	border-color: transparent;
+	height : 40px;
+	background-color: #33FF99;
+	position: relative;
+}
+
+#image_facebook
+{
+	width: 28px;
+   	height: 28px;
+   	position: absolute;
+   	top:50%;
+   	right:0;
+   	transform: translateY(-50%);
+  
+}
+
+#image_twitter
+{
+   	width: 30px;
+   	height: 30px;
+   	position: absolute;
+   	top:50%;
+   	right:2.5%;
+   	transform: translateY(-50%);
+
+}
+
+
+#header_middle
+{
+	border-style: solid;
+	border-color: transparent;
+	height : 80px;
+	background-color: #00FF80;
+	position: relative;
+}
+
+#image_logo_lorna
+{
+	width: 200px;
+	height: 80px; 
+	position: absolute;
+	left: 10%;
+}
+
+#text_seach
+{ 
+	/* borda da caixa de busca*/
+    border-style:solid;
+    border-radius: 8px;
+    border-color: #006600;
+
+    /* texto */
+
+    /* fundo */
+    background-color: #E0E0E0;
+    /*background-image: url(../images/search-icon.png);*/
+    background-size: 30px 30px; /* tamanho da imagem de fundo*/
+    background-position: 370px 1px; 
+    background-repeat: no-repeat;
+
+    /* tamanho da caixa de busca*/
+    width: 400px;
+    height: 30px;
+
+    position: absolute;
+    left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+
+}
+
+input[type=image]
+{
+	position: absolute;
+  	top: 50%;
+  	right: 32.5%;
+  	transform: translateY(-50%);
+  	width: 30px;
+  	height: 30px;
+}
+
+#header_bottom
+{
+
+	border-style: solid;
+	border-color: transparent;
+	height : 40px;
+	background-color: #00CC66;
+	position: relative;
+
+	display: flex;
+	flex-direction: line;
+	justify-content: space-around; /* */
+	align-items: center; /*alinhamento vertical*/
+
+}
+
+a.home_link:link,a.projects_link:link,a.developers_link:link,a.contato_link:link 
+{
+    color: #006600;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+#main_container
+{
+
+	position: relative;
+	margin: 2px auto;
+
+}
+
+#box_contato
+{
+	font-size: 15px;
+	text-align: justify;
+	margin: 2px 2px;
+	position: absolute;
+	top: 0;
+	right: 50%;
+
+	border-style: dotted;
+	border-color: #006600;
+}
