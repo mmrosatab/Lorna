@@ -4,7 +4,7 @@ body
 	margin: 0 0;
 	background-color: #E0E0E0;
 	font-size: 12px;
-	font-family: verdana;
+	font-family: sans-serif, arial, times new romam;
 }
 
 #container
@@ -126,19 +126,39 @@ a.home_link:link,a.projects_link:link,a.developers_link:link,a.contato_link:link
 {
 
 	position: relative;
-	margin: 2px auto;
-
+	margin: 4px 4px 4px 4px;
 }
 
-#box_contato
+#box_contat
 {
+	padding: 10px 10px 10px 10px;
 	font-size: 15px;
 	text-align: justify;
-	margin: 2px 2px;
 	position: absolute;
 	top: 0;
 	right: 50%;
 
-	border-style: dotted;
-	border-color: #006600;
+	border-style: dashed;
+	border-color: #C0C0C0;
+}
+
+#form_text
+{
+	
+
+}
+
+textarea
+{
+
+  	width: 400px;
+  	height: 100px;
+}
+
+input[type="submit"]
+{
+	position: absolute;
+	bottom: 2%;
+	right: 1%;
+
 }

@@ -1,130 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<meta charset="utf-8">
-	<title>Lorna :: Contato</title>
+		<meta charset="utf-8">
+		<title>Lorna :: Contato</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/contato.css">
+		<link rel="stylesheet" type="text/css" href="../css/contato.css">
 
-	<script type="text/javascript" src="jspdf.min.js"></script>
+		<script type="text/javascript" src="../js/jspdf.min.js"></script>
 
-	<script type="text/javascript">
+		<script type="text/javascript" src="../js/contato.js"></script>
 
-		function gerarPdf(argument) 
-		{		
-			var doc = new jsPDF();                       
+	</head>
+	<body>
 
-			doc.text(20, 20,"Bastante simples o jsPDF!"); // algum texto
+		<div id="container">
 
-			doc.save('Relatorio.pdf');	
-		} 
+			<div id="header_top"> 
+				<div id="twitter_page">
+					
+					<a target="_blank" href="https://twitter.com/?lang=pt">
+						<img id="image_twitter" src="../images/twitter_icon.png" alt="Nossa página no twitter">
+					</a>
+					
+				</div>
 
-	</script>
-
-</head>
-<body>
-
-	<div id="container">
-
-		<div id="header_top"> 
-			<div id="twitter_page">
 				
-				<a target="_blank" href="https://twitter.com/?lang=pt">
-					<img id="image_twitter" src="../images/twitter_icon.png" alt="Nossa página no twitter">
-				</a>
+				<div id="facebook_page">
+					
+					<a target="_blank" href="https://pt-br.facebook.com/">
+						<img id="image_facebook" src="../images/facebook_icon.png" alt="Nossa página no facebook">
+					</a>
+				
+				</div>
 				
 			</div>
 
+			<div id="header_middle">
+
+				<img id="image_logo_lorna" src="../images/logo_lorna.png" alt="Nossa página no facebook">
+				
+				<form>
+					<input id="text_seach" type="text" name="search" placeholder=" Search..">
+					<input id="search_button" type="image" src="../images/search-icon.png" name="search" alt="Clique aqui para fazer uma busca">
+				</form>
+				
+			</div>
+
+			<div id="header_bottom">
+				<div>
+					<a class="home_link" href="home.html">Home</a> 
+				</div>
+
+				<div>
+					 <a class="projects_link" href="projetos.html">Projetos</a> 
+					
+				</div>
+
+				<div>
+					 <a class="developers_link" href="desenvolvimento.html">Desenvolvedores</a> 
+					
+				</div>
+
+				<div>
+					 <a class="contato_link" href="contato.html">Contato</a> 
+					
+				</div>
 			
-			<div id="facebook_page">
-				
-				<a target="_blank" href="https://pt-br.facebook.com/">
-					<img id="image_facebook" src="../images/facebook_icon.png" alt="Nossa página no facebook">
-				</a>
-			
-			</div>
-			
-		</div>
-
-		<div id="header_middle">
-
-			<img id="image_logo_lorna" src="../images/logo_lorna.png" alt="Nossa página no facebook">
-			
-			<form>
-				<input id="text_seach" type="text" name="search" placeholder=" Search..">
-				<input id="search_button" type="image" src="../images/search-icon.png" name="search" alt="Clique aqui para fazer uma busca">
-			</form>
-			
-		</div>
-
-		<div id="header_bottom">
-			<div>
-				<a class="home_link" href="home.html">Home</a> 
 			</div>
 
-			<div>
-				 <a class="projects_link" href="projetos.html">Projetos</a> 
-				
-			</div>
+			<br>
 
-			<div>
-				 <a class="developers_link" href="desenvolvimento.html">Desenvolvedores</a> 
-				
-			</div>
+			<div id="main_container">
+				<div id=box_contat>
 
-			<div>
-				 <a class="contato_link" href="contato.html">Contato</a> 
-				
-			</div>
-		
-		</div>
-
-		<br>
-
-		<div id="main_container">
-			<div id=box_contato>
-				<div id="contato">
-					<form name = "form_contato" method="post" action="envia.php">
-
-						<p>
-							Para obter mais informações e/ou tirar dúvidas sobre nossos serviços,projetos e preços, 
+					<div id="form_text">
+							Para obter mais informações e/ou tirar dúvidas sobre nossos serviços, projetos e preços, 
 							entre em contato conosco pelo formulário abaixo. Você pode ainda falar conosco através de nossas
-							redes socias oficiais: Twitter e Facebook ou por telefone : (21) 3103-4771.
-						</p>
+							redes socias oficiais Twitter e Facebook ou por telefone : (21) 3103-4771.
+					</div>
+					<br>
+					<div id="form">
+						<form id="form_contato">
+							<table>
+								<tr>
+									<td><label>Nome</label></td>
+									<td><input type="text" name="name"></td>
+								</tr>
 
-						<table>
-							<tr>
-								<td>Nome</td>
-								<td><input type="text" name="nome"></td>
-							</tr>
+								<tr>
+									<td><label>E-mail</label></td>
+									<td><input type="text" name="email"></td>
+								</tr>
 
-							<tr>
-								<td>E-mail</td>
-								<td><input type="text" name="email"></td>
-							</tr>
+								<tr>
+									<td><label>Telefone</label></td>
+									<td><input type="text" name="phone"></td>
+								</tr>
 
-							<tr>
-								<td>Telefone</td>
-								<td><input type="text" name="telefone"></td>
-							</tr>
-
-							<tr>
-								<td>Mensagem</td>
-								<td><input type="text" name="mensagem"></td>
-							</tr>
-
-							<tr>
-								<td><input type="submit" name="enviar" value="Enviar"></td>
-							</tr>
-						</table>
-
-					</form>
+								<tr>
+									<td><label>Mensagem</label></td>
+									<td><textarea name="comment" form="form_contato"></textarea></td>
+								</tr>
+								
+								<tr>
+									<td><input type="submit" value="enviar" onclick="gerarPdf();"></td>
+								</tr>
+								
+							</table>		
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
+		
 
-</body>
+	</body>
 </html>

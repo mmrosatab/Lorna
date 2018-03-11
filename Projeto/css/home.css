@@ -4,7 +4,7 @@ body
 	margin: 0 0;
 	background-color: #E0E0E0;
 	font-size: 12px;
-	font-family: verdana;
+	font-family:  sans-serif, arial, times new romam;
 }
 
 #container
@@ -97,7 +97,7 @@ body
 
 input[type=image]
 {
-	position: absolute;
+	  position: absolute;
   	top: 50%;
   	right: 32.5%;
   	transform: translateY(-50%);
